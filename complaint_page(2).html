@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Home Page - project 21 helping hand</title> 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div class="menu-bar"><h1>HELPING HAND</h1>
+        <h4>for everyone</h4>
+<ul>
+    <li class="active"><i class="fa fa-home"></i><a href="#">Home</a>
+    <div class="sub-menu-1">
+        <ul>
+            <li><a href="complaint_page(2).html">Register your complaint</a></li>
+            <li><a href="Type_wise_display(1).html">Display-Type wise</a></li>
+            <li><a href="place_wise_display(1).html">Display-Place wise</a></li>
+        </ul>    
+    </div>
+    </li>
+    <li><i class="fa fa-user"></i><a href="#">About us</a>
+    <div class="sub-menu-1">
+        <ul>
+            <li><a href="#">Mission</a></li>
+            <li class="hover-me"><a href="#">Team</a><i class="fa fa-angle-right"></i>
+            <div class="sub-menu-2">
+            <ul>
+                <li><a href="#">Qamber Hasnain</a></li>
+                <li><a href="#">S. Vineel</a></li>
+            </ul>
+            </div>
+            </li>
+        </ul>    
+    </div>
+    </li>
+    <li><i class="fa fa-clone"></i><a href="#">Objective</a></li>
+    <li><i class="fa fa-phone"></i><a href="#">Contact us</a>
+    <div class="sub-menu-1">
+        <ul>
+            <li><a href="#">Qamber-8433141623</a></li>
+            <li><a href="#">Vineel-6303256980</a></li>
+        </ul>    
+    </div>
+    </li>
+</ul></div>   
+</body>
+</head>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styling.css"/>
+</head>
+<body>
+    <div id="boxDiv"></div>
+    <table id="complaint" align="center" border="1" cellpadding="5" bordercolor="white" bgcolor="skyblue">
+      <tr><style>
+    h2 {color: red}
+    </style>
+          <th colspan="4"><h2 align="center">Complaint Box</h2></th></tr>
+        <tr>
+        <td align="center">1.</td>
+        <td class="input">Type of complaints:</td>
+        <td colspan="2"><select id="complaint" name="select1" size="1">
+    <option value="health issues"> Health issues</option>
+    <option value="govt. related issues">Government related issues </option>
+    <option value="employment issues"> Employment issues </option>
+    <option value="other issues">Other issues </option>
+    </select></td>
+        </tr>
+        <tr>
+            <td align="center">1.</td>
+        <td class="input">State:</td>
+        <td colspan="2"><select id="state" name="select2" size="1">
+    <option value="delhi"> Delhi</option>
+    <option value="mumbai">Mumbai </option>
+    <option value="punjab"> Punjab </option>
+    <option value="goa">Goa </option>
+    </select></td>
+        </tr>
+        <tr>
+        <td align="center">2.</td>
+        <td class="input">Address:</td>
+        <td><textarea id="address" name="place_address" rows="1" cols="25" wrap="hard" maxlength="30" placeholder="Enter your address"></textarea></td>
+        </tr>
+        <tr>
+        <td align="center">3.</td>
+        <td class="input">Issues commencement date:</td>
+        <td colspan="2"><input id="date" type="date"></td>
+        </tr>
+        <tr>
+        <td align="center">4.</td>
+        <td class="input">Write about your problem:</td>
+        <td colspan="2"><textarea id="brief" name="brief about problem" rows="1" cols="50" wrap="hard" maxlength="250" placeholder="Brief about your problem..."></textarea></td>
+        </tr>
+        <tr>
+        <td align="center">5.</td>
+        <td class="input">Upload image related to problem:</td>
+        <td colspan="2" ><input id="image" type="file" accept="image/*"></td>
+        </tr>
+        <tr>
+        <td align="center">6.</td>
+        <td class="input">Upload video related to problem:</td>
+        <td colspan="2"><input id="video" type="file" accept="video/*"></td>
+        </tr>
+        <tr>
+        <td colspan="4"><div align="center"><button onclick="store()" id="entry">Submit</button></div></td>
+        </tr>
+    </table>
+    <script src="script (1).js"></script>
+    
+</body>
+</html>

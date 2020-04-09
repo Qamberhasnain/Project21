@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>Home Page - project 21 helping hand</title> 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div class="menu-bar"><h1>HELPING HAND</h1>
+        <h4>for everyone</h4>
+<ul>
+    <li class="active"><i class="fa fa-home"></i><a href="#">Home</a>
+    <div class="sub-menu-1">
+        <ul>
+            <li><a href="complaint_page(2).html">Register your complaint</a></li>
+            <li><a href="Type_wise_display(1).html">Display-Type wise</a></li>
+            <li><a href="place_wise_display(1).html">Display-Place wise</a></li>
+        </ul>    
+    </div>
+    </li>
+    <li><i class="fa fa-user"></i><a href="#">About us</a>
+    <div class="sub-menu-1">
+        <ul>
+            <li><a href="#">Mission</a></li>
+            <li class="hover-me"><a href="#">Team</a><i class="fa fa-angle-right"></i>
+            <div class="sub-menu-2">
+            <ul>
+                <li><a href="#">Qamber Hasnain</a></li>
+                <li><a href="#">S. Vineel</a></li>
+            </ul>
+            </div>
+            </li>
+        </ul>    
+    </div>
+    </li>
+    <li><i class="fa fa-clone"></i><a href="#">Objective</a></li>
+    <li><i class="fa fa-phone"></i><a href="#">Contact us</a>
+    <div class="sub-menu-1">
+        <ul>
+            <li><a href="#">Qamber-8433141623</a></li>
+            <li><a href="#">Vineel-6303256980</a></li>
+        </ul>    
+    </div>
+    </li>
+</ul></div>   
+</body>
+</head>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styling.css"/>
+</head>
+<body>
+
+    <select id="complaint" onchange="showPlaceWise(this.value)" name="select1" size="1">
+        <option value="">select</option>
+        <option value="1"> Delhi</option>
+        <option value="2">Punjab </option>
+        <option value="3"> Mumbai </option>
+        <option value="4">Goa </option>
+        </select>
+        
+
+    <table id="display" align="center" border="1" cellpadding="5" cellspacing="5">
+     <tr><style>
+    h2 {color: forestgreen}
+    </style>
+         <th colspan="7"><h2 align="center">Place wise </h2></th></tr>
+    <tr>
+        <th id="displayTH">Type of issue</th>
+        <th id="displayTH">State</th>
+        <th id="displayTH">Address</th>
+        <th id="displayTH">Date of issue</th>
+        <th id="displayTH">About problem</th>
+        <th id="displayTH">Related Image</th>
+        <th id="displayTH">Related Video</th>
+    </tr>
+    <tr class="delhi">
+        <td>Health issues</td>
+        <td>Delhi</td>
+        <td>H.no - 642 haus khas village</td>
+        <td>02.05.2019</td>
+        <td>drug shops not available</td>
+        <td>N.A</td>
+        <td>N.A</td>
+    </tr>
+    <tr class="delhi">
+        <td>Governnt Related Issues</td>
+        <td>Delhi</td>
+        <td>Anand vihar</td>
+        <td>22.04.2019</td>
+        <td>unconstructed roads</td>
+        <td>N.A</td>
+        <td>N.A</td>
+    </tr>
+    <tr class="delhi">
+        <td>Employment related issues</td>
+        <td>Delhi</td>
+        <td>seemapuri</td>
+        <td>25.02.2020</td>
+        <td>Lost my only shop in delhi riots.</td>
+        <td>N.A</td>
+        <td>N.A</td>
+    </tr>
+        <tr class="delhi">
+        <td>Employment related issues</td>
+        <td>Delhi</td>
+        <td>Janakpuri</td>
+        <td>16.07.2019</td>
+        <td>Company fired without any prior notice.</td>
+        <td>N.A</td>
+        <td>N.A</td>
+    </tr>
+        <tr class="delhi">
+        <td>Other issues</td>
+        <td>Delhi</td>
+        <td>South Ex</td>
+        <td>26.07.2018</td>
+        <td>Excess mobile tower causing deaths of birds.</td>
+        <td>N.A</td>
+        <td>N.A</td>
+    </tr>
+
+    <tr class="punjab">
+        <td>Health issues</td>
+        <td>Punjab</td>
+         <td>samana</td>
+        <td>18.09.2019</td>
+        <td>Illegal drugs being sold in medical stores.</td>
+        <td>N.A</td>
+        <td>N.A</td>
+    </tr>
+
+    <tr class="mumbai">
+        <td>Health issues</td>
+        <td>mumbai</td>
+        <td>H.no -42 Budhi vihar, Mumbai</td>
+        <td>04.01.2019</td>
+        <td>problem about hospital availability</td>
+        <td>N.A</td>
+        <td>N.A</td>
+    </tr>
+    <tr class="mumbai">
+        <td>Government Related Issues</td>
+        <td>mumbai</td>
+        <td>Andheri, Mumbai.</td>
+        <td>29.08.2019</td>
+        <td>sewage problem.</td>
+        <td>N.A</td>
+        <td>N.A</td>
+    </tr>
+    <tr class="mumbai">
+        <td>other issues</td>
+        <td>mumbai</td>
+        <td>goregaun, Mumbai.</td>
+        <td>09.06.2019</td>
+        <td>Network coverage problem.</td>
+        <td>N.A</td>
+        <td>N.A</td>
+    </tr>
+
+    <tr class="goa">
+        <td>Government Related Issues</td>
+        <td>Goa</td>
+        <td>Madgaon, Goa.</td>
+        <td>12.03.2019</td>
+        <td>water not available even for drinking.</td>
+        <td>N.A</td>
+        <td>N.A</td>
+    </tr>
+   
+    </table>
+    <script src="script (1).js"></script>
+</body>
+</html>
